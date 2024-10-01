@@ -2,7 +2,7 @@
 
 Un simple escarner de puertos hecho en python
 
-## Jostin Cruz 
+##Autor: Jostin Cruz 
 
 - **Nombre**: Jostin Cruz
 - **Correo**: cruzjostin987@gmail.com
