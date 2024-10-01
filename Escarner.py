@@ -5,6 +5,7 @@ from threading import Thread
 from concurrent.futures import ThreadPoolExecutor
 
 cont  = 0
+ip =''
 def iniciar_socket():
 
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
@@ -39,7 +40,7 @@ def inicializador(ip,port):
         escarner(ip,int(i))
 
 def menu():
-
+    global ip
 
     print(colored(f"----- Bienvenido al menu: ----- \n" , 'yellow'))
 
@@ -75,7 +76,7 @@ def menu():
 
 def main():
     menu()
-    print(colored(f"El programa termino con esta cantidad de puertos abiertos {cont}" , 'red'))
+    print(colored(f"\n El programa termino, la direccion {ip} tiene esta cantidad de puertos abiertos: {cont}" , 'red'))
 
 
 if __name__ == '__main__':
